@@ -153,4 +153,8 @@
     <!-- Settings main menu entry -->
     <string name="gesture_settings_title">Gestures</string>
 
+    <!-- tap-to-sleep -->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap status bar or lock screen slider to put the device to sleep</string>
+
 </resources>
