@@ -112,4 +112,11 @@
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
     <string name="status_bar_carrier_color">Carrier label color</string>
 
+     <!--- Advanced Settings -->
+    <string name="advanced_settings">Advanced settings</string>
+    <string name="advanced_settings_summary">Enable more settings options</string>
+
+    <!--- Tap To Wake -->
+    <string name="double_tap_to_wake_title">Double-tap to wake</string>
+
 </resources>
