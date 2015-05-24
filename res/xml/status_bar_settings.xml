@@ -30,4 +30,9 @@
 
     </PreferenceCategory>
 
+    <PreferenceScreen
+        android:key="carrier_options"
+        android:fragment="com.android.settings.tipsy.CarrierLabel"
+        android:title="@string/carrier_options" />
+
 </PreferenceScreen>
