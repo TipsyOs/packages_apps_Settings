@@ -425,9 +425,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mTapToWake) {
-            return TapToWake.setEnabled(mTapToWake.isChecked());
-        } else if (preference == mWakeWhenPluggedOrUnplugged) {
+        if (preference == mWakeWhenPluggedOrUnplugged) {
             Settings.Global.putInt(getContentResolver(),
                     Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
                     mWakeWhenPluggedOrUnplugged.isChecked() ? 1 : 0);
