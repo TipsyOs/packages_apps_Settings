@@ -104,8 +104,6 @@
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
 
-    <!-- LMT pie -->
-    <string name="lmt_settings">PIE Settings</string>
 
     <!-- Show carrier label and custom color -->
     <string name="carrier_options">Carrier Label</string>
@@ -211,5 +209,4 @@
 
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast icon</string>
-
 </resources>
