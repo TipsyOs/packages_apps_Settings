@@ -66,6 +66,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.android.settings.util.Helpers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -275,28 +276,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 (SwitchPreference) findPreference(KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED);
     }
 
-    private int getDefaultDensity() {
-        IWindowManager wm = IWindowManager.Stub.asInterface(ServiceManager.checkService(
-                Context.WINDOW_SERVICE));
-        try {
-            return wm.getInitialDisplayDensity(Display.DEFAULT_DISPLAY);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return DisplayMetrics.DENSITY_DEVICE;
-    }
-
-    private int getCurrentDensity() {
-        IWindowManager wm = IWindowManager.Stub.asInterface(ServiceManager.checkService(
-                Context.WINDOW_SERVICE));
-        try {
-            return wm.getBaseDisplayDensity(Display.DEFAULT_DISPLAY);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return DisplayMetrics.DENSITY_DEVICE;
-    }
-
     private static boolean allowAllRotations(Context context) {
         return Resources.getSystem().getBoolean(
                 com.android.internal.R.bool.config_allowAllRotations);
@@ -487,15 +466,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
     }
 
-        final IWindowManager wm = IWindowManager.Stub.asInterface(ServiceManager.checkService(
-                Context.WINDOW_SERVICE));
-
-                try {
-                    wm.setForcedDisplayDensity(Display.DEFAULT_DISPLAY, density);
-                } catch (RemoteException e) {
-                    Log.e(TAG, "Failed to set density to " + density, e);
-                }
-
     /**
      * Reads the current font size and sets the value in the summary text
      */
@@ -583,6 +553,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 final UiModeManager uiManager = (UiModeManager) getSystemService(
                         Context.UI_MODE_SERVICE);
                 uiManager.setNightMode(value);
+                Helpers.restartSystemUI();
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist night mode setting", e);
             }
