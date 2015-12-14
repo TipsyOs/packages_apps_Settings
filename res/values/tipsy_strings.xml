@@ -13,7 +13,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, Tipsy version -->
+    <!-- About phone screen, Validus version -->
     <string name="mod_version">Tipsy version</string>
     <string name="mod_version_default">Unknown</string>
     <string name="model_name">Model name</string>
@@ -237,13 +237,6 @@
     <!-- Double tap to sleep on lockscreen -->
     <string name="double_tap_sleep_anywhere_title">Double-tap to sleep</string>
     <string name="double_tap_sleep_anywhere_summary">Double tap lockscreen to put the device to sleep</string>
-
-    <!-- Display & Lights screen, setting options for LCD density -->
-    <string name="lcd_density">LCD density</string>
-    <string name="dialog_title_lcd_density">LCD density</string>
-    <string name="lcd_density_value_format">%d DPI</string>
-    <string name="lcd_density_default_value_format">%d DPI (default)</string>
-    <string name="restarting_ui">Restarting UI\u2026</string>
 
     <!-- Keyboard and Input methods  -->
     <string name="title_keyboard_input">Advanced options</string>
