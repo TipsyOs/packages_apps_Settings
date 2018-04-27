@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2017 Ground Zero Roms
+<!-- Copyright (C) 2017 GZOSP
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -12,6 +12,18 @@
      limitations under the License.
 -->
 
-<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/gzosp_about_alpha"
-    android:tint="#FAFAFA" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="600dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tipsy_about"
+        />
+
+</LinearLayout>
