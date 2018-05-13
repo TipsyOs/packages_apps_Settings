@@ -45,8 +45,5 @@
 
     <string name="tavern_settings_activity">Tavern</string>
     <string name="tavern_settings_activity_summary">Additional project settings</string>
-
-    <string name="link_volume_option_title">Link ring and notification volume</string>
-
 </resources>
 
