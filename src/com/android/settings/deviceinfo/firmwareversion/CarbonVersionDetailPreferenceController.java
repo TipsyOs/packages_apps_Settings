@@ -42,7 +42,7 @@ public class CarbonVersionDetailPreferenceController extends BasePreferenceContr
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
-    private static final String KEY_CARBON_VERSION_PROP = "ro.carbon.version";
+    private static final String KEY_CARBON_VERSION_PROP = "ro.tipsy.version";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
@@ -129,6 +129,6 @@ public class CarbonVersionDetailPreferenceController extends BasePreferenceContr
     @Override
     public void copy() {
         Sliceable.setCopyContent(mContext, getSummary(),
-                mContext.getText(R.string.carbon_version));
+                mContext.getText(R.string.tipsy_version));
     }
 }

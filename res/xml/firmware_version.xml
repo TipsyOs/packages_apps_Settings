@@ -33,7 +33,7 @@
     <!-- CarbonROM version -->
     <Preference
         android:key="carbon_version"
-        android:title="@string/carbon_version"
+        android:title="@string/tipsy_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.CarbonVersionDetailPreferenceController"/>
