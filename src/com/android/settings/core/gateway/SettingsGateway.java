@@ -148,9 +148,9 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
-import org.carbonrom.carbonfibers.CarbonFibers;
-import org.carbonrom.carbonfibers.fragments.system.SmartPixels;
-import org.carbonrom.carbonfibers.fragments.system.System;
+import org.tipsy.martysplace.MartysPlace;
+import org.tipsy.martysplace.fragments.system.SmartPixels;
+import org.tipsy.martysplace.fragments.system.System;
 
 public class SettingsGateway {
 
@@ -288,7 +288,7 @@ public class SettingsGateway {
             MobileNetworkListFragment.class.getName(),
             GlobalActionsPanelSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
-            CarbonFibers.class.getName(),
+            MartysPlace.class.getName(),
             SmartPixels.class.getName(),
             System.class.getName(),
     };
@@ -329,9 +329,9 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
-            Settings.CarbonFibersActivity.class.getName(),
+            Settings.MartysPlaceActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
-            Settings.CarbonFibersSystemActivity.class.getName(),
+            Settings.MartysPlaceSystemActivity.class.getName(),
             Settings.SystemNavActivity.class.getName(),
     };
 }

@@ -178,8 +178,8 @@ public class Settings extends SettingsActivity {
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 
-    public static class CarbonFibersActivity extends SettingsActivity { /* empty */ }
-    public static class CarbonFibersSystemActivity extends SettingsActivity { /* empty */ }
+    public static class MartysPlaceActivity extends SettingsActivity { /* empty */ }
+    public static class MartysPlaceSystemActivity extends SettingsActivity { /* empty */ }
     public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
     public static class SystemNavActivity extends SettingsActivity { /* empty */ }
 }
