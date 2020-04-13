@@ -3301,28 +3301,6 @@
                 android:value="com.android.settings.gestures.GlobalActionsPanelSettings" />
         </activity>
 
-        <!-- Anonymous Statistics -->
-        <receiver android:name="org.tipsy.martysplace.crstats.ReportingServiceManager"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingServiceManager">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="org.tipsy.martysplace.action.TRIGGER_REPORT_METRICS" />
-            </intent-filter>
-        </receiver>
-         <service android:label="ReportingService"
-            android:enabled="true"
-            android:exported="false"
-            android:name=".crstats.ReportingService">
-        </service>
-         <service android:name="org.tipsy.martysplace.crstats.StatsUploadJobService"
-                 android:permission="android.permission.BIND_JOB_SERVICE" />
-         <service android:name="org.tipsy.martysplace.crstats.ReportingService"
-                 android:label="ReportingService"
-                 android:enabled="true"
-                 android:exported="false" />
-
         <!-- MartysPlace -->
         <activity android:name=".Settings$MartysPlaceActivity"
             android:label="@string/tipsy_settings_title"
