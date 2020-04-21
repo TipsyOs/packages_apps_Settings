@@ -22,5 +22,9 @@
     <!-- MartysPlace -->
     <string name="tipsy_settings_title">Marty\'s Place</string>
     <string name="tipsy_dashboard_summary">Bar\'s open...come on in!</string>
+    
+    <!-- About phone screen, Tipsy device maintainer name -->
+    <string name="device_maintainer">Device maintainer</string>
+    <string name="device_maintainers">Device maintainers</string>
 
 </resources>
