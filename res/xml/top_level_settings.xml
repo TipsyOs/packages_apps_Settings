@@ -21,6 +21,15 @@
     android:key="top_level_settings">
 
     <Preference
+        android:key="top_level_martysplace"
+        android:title="@string/tipsy_settings_title"
+        android:summary="@string/tipsy_dashboard_summary"
+        android:icon="@drawable/ic_homepage_tipsy"
+        android:order="-130"
+        android:fragment="org.tipsy.martysplace.MartysPlace"
+        settings:controller="org.tipsy.martysplace.TopLevelMartysPlaceEntryPreferenceController" />
+
+    <Preference
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
